@@ -1,10 +1,11 @@
+import { Outlet } from "react-router-dom"
 
 function App() {
 
   return (
-    <>
-      this is root component
-    </>
+    <div className="max-w-[1140px] mx-auto">
+      <Outlet></Outlet>
+    </div>
   )
 }
 
