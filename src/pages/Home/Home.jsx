@@ -9,19 +9,19 @@ import BreakingNews from "./BreakingNews";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 
 const Home = () => {
-    const navigator= useNavigate(null);
+    const navigator = useNavigate(null);
     const location = useLocation();
     useEffect(() => {
-        if(location.pathname=='/'){
+        if (location.pathname == '/') {
             navigator('/category/0');
         }
-    },[])
+    }, [])
     return (
-        <div className="">
+        <div className="max-w-[1140px] mx-auto">
             <Header></Header>
             <BreakingNews></BreakingNews>
             <Navbar></Navbar>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid lg:mt-20 mb-6 mt-6 grid-cols-4 gap-6">
                 <div className="">
                     <LeftSideNav></LeftSideNav>
                 </div>

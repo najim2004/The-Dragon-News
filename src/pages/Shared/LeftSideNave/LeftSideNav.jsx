@@ -5,7 +5,7 @@ const LeftSideNav = () => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('data/categories.json')
+        fetch('/data/categories.json')
             .then(response => response.json())
             .then(data => setCategories(data))
     }, [])

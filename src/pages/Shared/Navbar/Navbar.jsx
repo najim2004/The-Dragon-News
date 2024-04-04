@@ -4,13 +4,13 @@ const Navbar = () => {
 
     const menu =
         <>
-            <li><NavLink to={'/'}>Home</NavLink></li>
+            <li><NavLink to={'/category/0'}>Home</NavLink></li>
             <li><NavLink to={'/'}>About</NavLink></li>
             <li><NavLink to={'/'}>Career</NavLink></li>
         </>
     return (
-        <div className="lg:mb-20 mb-6">
-            <div className="navbar bg-base-100">
+        <div className="">
+            <div className="navbar">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ const Navbar = () => {
                             <li><a>Logout</a></li>
                         </ul>
                     </div>
-                    <Link to={'/'}>
+                    <Link to={'/login'}>
                         <button className="h-11 w-[140px] text-xl font-semibold text-white bg-[#403F3F] btn !rounded-none">Login</button>
                     </Link>
                 </div>
