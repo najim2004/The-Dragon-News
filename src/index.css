@@ -15,3 +15,9 @@ body {
     text-decoration: underline rgb(101, 101, 255);
 
 }
+
+.categories a.active{
+    background-color: #E7E7E7;
+    border-radius: 5px;
+    color: black;
+}
