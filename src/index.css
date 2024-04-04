@@ -8,3 +8,10 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
+.navbar-center a.active{
+    background: none !important;
+    color: #706F6F !important;
+    text-decoration: underline rgb(101, 101, 255);
+
+}
