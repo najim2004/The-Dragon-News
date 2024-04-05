@@ -21,11 +21,11 @@ const RightSideNav = () => {
             <div className="mb-5">
                 <h2 className="text-2xl font-semibold mb-5">Find Us On</h2>
                 <div className="border-[2px] py-4 border-[#E7E7E7] w-full rounded-[5px]">
-                    <a href="#" target="_blank"><div className="text-[#706F6F] flex items-center gap-2 font-medium ml-4"><span className="!size-[30px] text-blue-700 rounded-[50%] justify-center items-center flex text-2xl bg-[#F3F3F3]"><TiSocialFacebook /></span> Facebook</div></a>
+                    <a href="https://web.facebook.com/najim2004" target="_blank"><div className="text-[#706F6F] flex items-center gap-2 font-medium ml-4"><span className="!size-[30px] text-blue-700 rounded-[50%] justify-center items-center flex text-2xl bg-[#F3F3F3]"><TiSocialFacebook /></span> Facebook</div></a>
                     <hr className="bg-[#E7E7E7] h-[1px] my-4" />
                     <a href="#" target="_blank"><div className="text-[#706F6F] flex items-center gap-2 font-medium ml-4"><span className="!size-[30px] text-blue-500 rounded-[50%] justify-center items-center flex !text-normal bg-[#F3F3F3]"><ImTwitter /></span> Twitter</div></a>
                     <hr className="bg-[#E7E7E7] h-[1px] my-4" />
-                    <a href="#" target="_blank"><div className="text-[#706F6F] flex items-center gap-2 font-medium ml-4"><span className="!size-[30px] text-orange-500 rounded-[50%] justify-center items-center flex text-2xl bg-[#F3F3F3]"><LiaInstagram /></span> Instagram</div></a>
+                    <a href="https://www.instagram.com/mdnajim2004/" target="_blank"><div className="text-[#706F6F] flex items-center gap-2 font-medium ml-4"><span className="!size-[30px] text-orange-500 rounded-[50%] justify-center items-center flex text-2xl bg-[#F3F3F3]"><LiaInstagram /></span> Instagram</div></a>
                 </div>
             </div>
             <div className="bg-[#F3F3F3] p-4">
