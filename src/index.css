@@ -4,19 +4,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+}
 
 body {
     font-family: "Poppins", sans-serif;
 }
 
-.navbar-center a.active{
+.navbar-center a.active {
     background: none !important;
     color: #706F6F !important;
     text-decoration: underline rgb(101, 101, 255);
 
 }
 
-.categories a.active{
+.categories a.active {
     background-color: #E7E7E7;
     border-radius: 5px;
     color: black;
