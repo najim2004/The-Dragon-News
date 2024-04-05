@@ -3,15 +3,24 @@ import Navbar from '../Shared/Navbar/Navbar';
 import { Link } from 'react-router-dom';
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 const Login = () => {
     const [pSC, setPSC] = useState(false);
+
+    const location = useLocation();
+
     const navigator = useNavigate();
+
     const { userLogIn, user, loading } = useContext(AuthContext);
+
     useEffect(() => {
         console.log(user);
         if (user) {
-            navigator('/')
+            if (location?.state) {
+                navigator(location.state)
+            } else {
+                navigator('/')
+            }
         }
     }, [loading, user])
 
@@ -28,7 +37,11 @@ const Login = () => {
         userLogIn(email, password)
             .then((userCredentials) => {
                 console.log('user logged in', userCredentials);
-                navigator('/')
+                if (location?.state) {
+                    navigator(location.state)
+                } else {
+                    navigator('/')
+                }
             })
             .catch((error) => {
                 console.log('error logging in', error);

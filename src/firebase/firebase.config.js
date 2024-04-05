@@ -6,15 +6,15 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDMJFNC9OprV77I_IQ123_A9ntEBXNbczM",
-  authDomain: "the-dragon-news-3155e.firebaseapp.com",
-  projectId: "the-dragon-news-3155e",
-  storageBucket: "the-dragon-news-3155e.appspot.com",
-  messagingSenderId: "799903953963",
-  appId: "1:799903953963:web:baa8809b2a92a46fe1666e"
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export const auth= getAuth(app);
+export const auth = getAuth(app);
