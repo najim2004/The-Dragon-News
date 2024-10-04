@@ -14,6 +14,7 @@ const News = ({ news }) => {
         author,
         image_url,
         details } = news;
+
     return (
         <div className='mb-[30px]'>
             <div className="h-20 min-w-full rounded-t-[5px] bg-[#F3F3F3] px-5 flex justify-between items-center">
